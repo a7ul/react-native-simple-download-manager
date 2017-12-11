@@ -1,5 +1,5 @@
 {
-    "name": "react-native-download-manager",
+    "name": "react-native-simple-download-manager",
     "version": "1.0.0",
     "description": "A react native module that lets you download files using the native download manager.",
     "main": "index.js",

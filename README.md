@@ -1,5 +1,5 @@
 
-# react-native-download-manager
+# react-native-simple-download-manager
 
 A simple straightforward react native module that lets you schedule downloads onto your download manager for android.
 
@@ -13,16 +13,16 @@ TODO - ios module
 
 ### Installation:
 
-`yarn add react-native-download-manager`
+`yarn add react-native-simple-download-manager`
 
 or
 
-`npm i react-native-download-manager --save`
+`npm i react-native-simple-download-manager --save`
 
 
 ### Mostly automatic installation
 
-`react-native link react-native-download-manager`
+`react-native link react-native-simple-download-manager`
 
 ### Manual installation
 
@@ -34,12 +34,12 @@ or
   - Add `new ReactNativeDownloadManagerPackage()` to the list returned by the `getPackages()` method
 2. Append the following lines to `android/settings.gradle`:
   	```
-  	include ':react-native-download-manager'
-  	project(':react-native-download-manager').projectDir = new File(rootProject.projectDir, 	'../node_modules/react-native-download-manager/android')
+  	include ':react-native-simple-download-manager'
+  	project(':react-native-simple-download-manager').projectDir = new File(rootProject.projectDir, 	'../node_modules/react-native-simple-download-manager/android')
   	```
 3. Insert the following lines inside the dependencies block in `android/app/build.gradle`:
   	```
-      compile project(':react-native-download-manager')
+      compile project(':react-native-simple-download-manager')
   	```
 
 ### Usage
