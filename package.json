@@ -1,6 +1,6 @@
 {
     "name": "react-native-download-manager",
-    "version": "0.1.0",
+    "version": "1.0.0",
     "description": "A react native module that lets you download files using the native download manager.",
     "main": "index.js",
     "scripts": {
