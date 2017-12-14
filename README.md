@@ -46,6 +46,25 @@ or
 
 ```js
 
+const downloadManager = require('react-native-simple-download-manager');
+
+const url = 'http://url/to/file.ext?query=parmas';
+const headers = {'Authorization': 'Bearer abcsdsjkdjskjdkskjd'};
+const config = {
+  downloadTitle: 'Title that should appear in Native Download manager',
+  downloadDescription: 'Description that should appear in Native Download manager',
+  saveAsName: 'File name to save',
+  allowedInRoaming: true,
+  allowedInMetered: true,
+  showInDownloads: true
+};
+
+downloadManager.download(url = '', headers = {}, config = {}).then((response)=>{
+  console.log('Download success!');
+}).catch(err=>{
+  console.log('Download failed!');
+})
+
 ```                                     
 
 ### Advanced Usage
