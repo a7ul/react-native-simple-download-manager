@@ -26,7 +26,7 @@ public class ReactNativeDownloadManagerModule extends ReactContextBaseJavaModule
         public void onReceive(Context context, Intent intent) {
             try {
                 long downloadId = intent.getLongExtra(DownloadManager.EXTRA_DOWNLOAD_ID, -1);
-                if (appDownloads.indexOfKey(downloadId) > 0) {
+                if (appDownloads.indexOfKey(downloadId) >= 0) {
                     WritableMap downloadStatus = downloader.checkDownloadStatus(downloadId);
                     Callback downloadOnDoneCb = appDownloads.get(downloadId);
 
