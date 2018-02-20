@@ -70,6 +70,9 @@ downloadManager.download(url = '', headers = {}, config = {}).then((response)=>{
 ### Advanced Usage
 
 
+### Contributors
 
+ - [Atul R](https://github.com/master-atul)
+ - [Shivam Barsaley](https://github.com/shivambarsaley)
 
 Peace ! ✌🏻🌮
