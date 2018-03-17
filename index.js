@@ -10,7 +10,7 @@ const getRequestConfig = (config, url) => Object.assign({}, {
   allowedInMetered: true,
   showInDownloads: true,
   external: false,
-  path: "Downloads/"
+  path: "Download/"
 }, config);
 
 const download = (url = '', headers = {}, config = {}) => {
