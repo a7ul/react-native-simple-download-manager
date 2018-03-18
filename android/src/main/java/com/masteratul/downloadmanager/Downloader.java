@@ -29,6 +29,10 @@ public class Downloader {
         String downloadTitle = requestConfig.getString("downloadTitle");
         String downloadDescription = requestConfig.getString("downloadTitle");
         String saveAsName = requestConfig.getString("saveAsName");
+
+        Boolean external = requestConfig.getBoolean("external");
+        String external_path = requestConfig.getString("path");
+
         Boolean allowedInRoaming = requestConfig.getBoolean("allowedInRoaming");
         Boolean allowedInMetered = requestConfig.getBoolean("allowedInMetered");
         Boolean showInDownloads = requestConfig.getBoolean("showInDownloads");
@@ -42,9 +46,18 @@ public class Downloader {
             request.addRequestHeader(key, headers.getString(key));
         }
 
+        
+
+        if(external){
+            request.setDestinationInExternalPublicDir(external_path, saveAsName);
+
+        }else{
+            request.setDestinationInExternalFilesDir(context, Environment.DIRECTORY_DOWNLOADS, saveAsName);
+
+        }
+
         request.setTitle(downloadTitle);
         request.setDescription(downloadDescription);
-        request.setDestinationInExternalFilesDir(context, Environment.DIRECTORY_DOWNLOADS, saveAsName);
         request.setAllowedOverRoaming(allowedInRoaming);
         request.setAllowedOverMetered(allowedInMetered);
         request.setVisibleInDownloadsUi(showInDownloads);

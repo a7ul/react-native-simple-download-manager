@@ -8,7 +8,9 @@ const getRequestConfig = (config, url) => Object.assign({}, {
   saveAsName: 'Downloaded File - ' + new Date(),
   allowedInRoaming: true,
   allowedInMetered: true,
-  showInDownloads: true
+  showInDownloads: true,
+  external: false,
+  path: "Download/"
 }, config);
 
 const download = (url = '', headers = {}, config = {}) => {
