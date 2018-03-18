@@ -56,7 +56,9 @@ const config = {
   saveAsName: 'File name to save',
   allowedInRoaming: true,
   allowedInMetered: true,
-  showInDownloads: true
+  showInDownloads: true,
+  external: false, //when false basically means use the default Download path (version ^1.3)
+  path: "Download/" //if "external" is true then use this path (version ^1.3)
 };
 
 downloadManager.download(url = '', headers = {}, config = {}).then((response)=>{
@@ -69,10 +71,19 @@ downloadManager.download(url = '', headers = {}, config = {}).then((response)=>{
 
 ### Advanced Usage
 
+The module currently supports
+download,
+queueDownload,
+attachOnCompleteListener,
+cancel,
+checkStatus
+
+You can check https://github.com/master-atul/react-native-simple-download-manager/blob/master/index.js
 
 ### Contributors
 
  - [Atul R](https://github.com/master-atul)
  - [Shivam Barsaley](https://github.com/shivambarsaley)
+ - [ibrahimtelman](https://github.com/ibrahimtelman)
 
 Peace ! ✌🏻🌮
