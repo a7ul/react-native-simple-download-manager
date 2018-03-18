@@ -72,11 +72,11 @@ downloadManager.download(url = '', headers = {}, config = {}).then((response)=>{
 ### Advanced Usage
 
 The module currently supports
-download,
-queueDownload,
-attachOnCompleteListener,
-cancel,
-checkStatus
+- download,
+- queueDownload,
+- attachOnCompleteListener,
+- cancel,
+- checkStatus
 
 You can check https://github.com/master-atul/react-native-simple-download-manager/blob/master/index.js
 
