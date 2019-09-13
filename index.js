@@ -69,5 +69,5 @@ module.exports = {
   queueDownload,
   attachOnCompleteListener,
   cancel,
-  checkStatus
+  checkStatus 
 };
